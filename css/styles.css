@@ -1,0 +1,95 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#about {
+  background-image: url('../images/TIF22.jpg'); /* Ganti dengan path ke gambar Anda */
+  background-size: cover; /* Memperbesar gambar agar menutupi seluruh area */
+  background-position: center center; /* Memposisikan gambar di tengah */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  height: 500px; /* Menambahkan tinggi minimum untuk bagian ini */
+  color: white; /* Menyesuaikan warna teks agar kontras dengan gambar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animasi umum */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animasi 3D untuk Card */
+.card {
+  max-width: 300px; /* Lebar maksimum card */
+  margin: auto; /* Memusatkan card secara horizontal */
+  padding-top: 20px; /* Jarak atas antara gambar dan card */
+  border: 1px solid #ddd; /* Border halus */
+  border-radius: 10px; /* Sedikit rounded pada sudut card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan card */
+  transition: transform 0.3s ease; /* Transisi untuk transformasi */
+  transform-style: preserve-3d; /* Mempertahankan efek 3D */
+}
+
+.card:hover {
+  transform: rotateY(10deg) scale(1.05); /* Efek rotasi dan pembesaran saat di-hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih dalam saat di-hover */
+}
+
+.card .card-img-top {
+  border-radius: 50%; /* Membuat gambar bulat */
+  transition: transform 0.3s ease; /* Transisi untuk transformasi gambar */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Efek pembesaran pada gambar saat di-hover */
+}
+
+.custom-img {
+  width: 8rem; /* Ukuran gambar disesuaikan */
+  height: 8rem; /* Ukuran gambar disesuaikan */
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px auto; /* Margin untuk memusatkan gambar */
+}
